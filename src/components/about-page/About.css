@@ -14,9 +14,13 @@ body{
   grid-column-start: 1;
   grid-column-end: 2;
   display: flex;
+  flex-direction: column;
   margin: 10px;
   border: 1px solid #f0f0f0;
   border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 250px;
 }
 #details{
   background-color: #fff;
@@ -24,9 +28,10 @@ body{
   grid-column-end: 6;
 }
 #profile-info{
-  margin: auto;
+  margin-top: 200px;
   padding: 15px;
   display: flex;
+  position: fixed;
   flex-direction: column;
 }
 #profile-image{
@@ -47,12 +52,31 @@ body{
   font-weight: 300;
   margin: 5px 0px;
 }
-
+#content>h4{
+  text-align: center;
+  font-size: 12px;
+  color: #1e385e;
+  font-weight: 300;
+  margin: 5px 0px;
+}
+#content>h5{
+  text-align: center;
+  font-size: 10px;
+  color: #3c4e69;
+  font-weight: 300;
+  margin: 5px 0px;
+}
 #about-social{
   display: flex;
-  width: 80%;
+  width: 100%;
   float: right;
   justify-content: space-between;
+}
+#gmail-image{
+  margin: 8px 0px;
+  min-height: 34px;
+  min-width: 34px;
+  background-image: url('../../images/gmail-l.png');
 }
 .social-icon-about{
   min-width: 30px;
@@ -63,12 +87,24 @@ body{
   margin: 10px 0px;
   filter: brightness(70%);
 }
-
+.social-icon-about:hover{
+  transition: 0.2s;
+  filter: brightness(50%);
+}
+#menu{
+  margin-top: 10px;
+  animation: width-animation-menu 0.5s both ease-in;
+  animation-delay: 0s;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
 @media only screen and (max-width: 600px) {
   #profile-container{
     grid-column-start: 1;
     grid-column-end: 6;
     max-height: 230px;
+    min-width: 95%;
   }
   #details{
     grid-column-start: 1;
@@ -79,19 +115,51 @@ body{
     flex-direction: row;
     justify-content: space-between;
     min-width: 90%;
+    position: sticky;
   }
   #profile-image{
-    width: 8rem;
+    min-width: 8rem;
+    max-width: 8rem;
     min-height: 8rem;
   }
   #content>h3{
     text-align: right;
     color: #1e385e;
     font-weight: 300;
-    margin: 5px 0px;
+    margin: 2px 0px;
+  }
+  #content>h4{
+    text-align: right;
+    margin: 2px 0px;
+  }
+  #content>h5{
+    text-align: right;
+  }
+  #menu{
+    margin-top: 10px;
   }
 }
 hr{
   border-top: 1px solid #b2b2b2;
   border-bottom: none;
+}
+@keyframes width-animation-menu{
+  from {
+    opacity: 0;
+    max-width: 0%;
+  }
+  to {
+    opacity: 1;
+    max-width: 100%;
+  }
+}
+.menu-items{
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 5px 15px 5px 15px;
+  outline: none;
+  border: none;
+}
+#render-area{
+  padding: 10px;
 }
