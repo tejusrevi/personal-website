@@ -1,0 +1,222 @@
+body{
+  background-color: #fff;
+  overflow-x: hidden;
+}
+#root{
+  overflow-x: hidden;
+  background-color: #fff;
+  color:#182742;
+}
+#canvas{
+  position: relative;
+  overflow: hidden;
+}
+#content{
+  text-align: center;
+}
+.fadeforever{
+  animation: fadeforever 60s both;
+}
+#intro-container{
+  width: 100%;
+  position: absolute;
+}
+#intro{
+  margin: auto;
+  width: max-content;
+  max-width: 95%;
+  text-align: center;
+  font-family: 'Roboto';
+  opacity : 0.9;
+  letter-spacing: 0.15em;
+}
+#social{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  background-color: #324f6e;
+  border-radius: 12px;
+  overflow: hidden;
+  justify-content: space-evenly;
+  opacity: 0.9;
+  max-width: 30%;
+  animation: width-animation-social-desktop 0.7s both ease-in;
+  animation-delay: 3s;
+}
+@keyframes width-animation-social-desktop{
+  from {
+    opacity: 0;
+    max-width: 0%;
+  }
+  to {
+    opacity: 0.9;
+    max-width: 30%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #social{
+    animation: width-animation-social-mobile 0.7s both ease-in;
+    animation-delay: 3s;
+  }
+}
+@keyframes width-animation-social-mobile{
+  from {
+    opacity: 0;
+    max-width: 0%;
+  }
+  to {
+    opacity: 0.9;
+    max-width: 80%;
+  }
+}
+
+
+.social-icon{
+  min-width: 30px;
+  min-height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px;
+}
+
+.social-icon:hover{
+  animation: icon-grow 0.2s both ;
+}
+
+@keyframes icon-grow{
+  from{
+    min-width: 30px;
+    min-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  to{
+    min-width: 40px;
+    min-height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/*icons*/
+#linkedin-image{
+  background-image: url('../../images/linkedin-l.png');
+}
+#github-image{
+  background-image: url('../../images/github-l.png');
+}
+#kaggle-image{
+  background-image: url('../../images/kaggle-l.png');
+}
+#instagram-image{
+  background-image: url('../../images/instagram-l.png');
+}
+#facebook-image{
+  background-image: url('../../images/facebook-l.png');
+}
+
+/*typrwriter*/
+.typewriter{
+  padding: 10px 20px;
+  border-radius: 20%;
+  opacity: 0.5;
+  animation: typewriter-white 5s both ease;
+}
+@keyframes typewriter-white{
+  from{
+    background-color: transparent;
+    box-shadow: -25px -25px 50px 10px transparent; 
+  }
+  to{
+    background-color: #fff;
+    box-shadow: -25px -25px 50px 10px white; 
+  }
+}
+.typewriter h1 {
+  font-weight: bolder;
+  font-size: 1.8rem;
+  opacity: 0.9;
+  overflow: hidden;
+  border-right: .15em solid #3c6591; 
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: .15em; 
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  padding: 10px 0px 0px 0px;
+}
+.typewriter h3 {
+  font-weight: lighter;
+  font-size: 1rem;
+  animation: fade-in 0.5s both ease-in;
+  animation-delay: 2.5s;
+  margin: 10px 0px 0px 0px;
+}
+.typewriter h4 {
+  font-weight: lighter;
+  font-size: 0.7rem;
+  animation: fade-in 0.5s both ease-in;
+  animation-delay: 7s;
+  margin: 10px 0px 0px 0px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #3c6591; }
+}
+@keyframes fade-in{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+#menu{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  max-width: 10%;
+  z-index: 2;
+  padding: 40px 0px;
+  animation: width-animation-menu 0.5s both ease-in;
+  animation-delay: 3s;
+}
+@keyframes width-animation-menu{
+  from {
+    opacity: 0;
+    max-width: 0%;
+  }
+  to {
+    opacity: 1;
+    max-width: 100%;
+  }
+}
+.menu-item{
+  display: flex;
+}
+
+.menu-button{
+  font-family: 'Roboto';
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(0,0,0,.6);
+  background: transparent;
+  outline: none;
+  border: none;
+  line-height: 32px;
+  padding: 0 30px;
+  border-radius: 20px;
+  background-color: #eee;
+  margin-bottom: 5px;
+  height: 40px;
+}
+.menu-button:hover{
+  background-color: #ddd;
+  transform: scale(1.05);
+  transition: 0.1s;
+}

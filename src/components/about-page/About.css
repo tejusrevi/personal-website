@@ -1,0 +1,97 @@
+body{
+  
+}
+#root{
+  min-height: 100vh;
+}
+#container{
+  display: grid;
+  grid-template-columns: repeat(auto, minmax(400px,1fr));
+  min-height: 100vh;
+}
+#profile-container{
+  background-color: #f4f4f4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  margin: 10px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+}
+#details{
+  background-color: #fff;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+#profile-info{
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#profile-image{
+  width: 13rem;
+  min-height: 13rem;
+  margin: auto;
+  border-radius: 50%;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/tejus-square-min.jpeg?alt=media&token=16b354cc-8928-42a8-bca0-fbf9f508aba0');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content{
+  margin: auto;
+}
+#content>h3{
+  text-align: center;
+  color: #1e385e;
+  font-weight: 300;
+  margin: 5px 0px;
+}
+
+#about-social{
+  display: flex;
+  width: 80%;
+  float: right;
+  justify-content: space-between;
+}
+.social-icon-about{
+  min-width: 30px;
+  min-height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px 0px;
+  filter: brightness(70%);
+}
+
+@media only screen and (max-width: 600px) {
+  #profile-container{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    max-height: 230px;
+  }
+  #details{
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  #profile-info{
+    margin: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 90%;
+  }
+  #profile-image{
+    width: 8rem;
+    min-height: 8rem;
+  }
+  #content>h3{
+    text-align: right;
+    color: #1e385e;
+    font-weight: 300;
+    margin: 5px 0px;
+  }
+}
+hr{
+  border-top: 1px solid #b2b2b2;
+  border-bottom: none;
+}
