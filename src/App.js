@@ -3,7 +3,6 @@ import "./App.css";
 import {Route, Switch } from "react-router-dom";
 import Homepage from "./components/home-page/Homepage";
 import About from "./components/about-page/About";
-import Projects from "./components/projects-page/Projects";
 import databasePromise from './secret'
 function App() {
   return (

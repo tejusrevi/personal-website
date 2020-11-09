@@ -73,6 +73,9 @@ function Homepage(props){
                   <div id="more">
                       <button className="more-button" onClick={ ()=> window.open('/about',"_self") }>More About Me</button>
                   </div>
+                  <div id="credits">
+                    <h3>Handrafted with Reactjs by Tejus Revi</h3>
+                  </div>
               </div>
           </div>
       </div>

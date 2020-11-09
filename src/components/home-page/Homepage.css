@@ -1,6 +1,10 @@
 body{
   background-color: #fff;
   overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+button{
+  cursor:pointer;
 }
 #root{
   overflow-x: hidden;
@@ -158,7 +162,7 @@ body{
   font-weight: lighter;
   font-size: 0.7rem;
   animation: fade-in 0.5s both ease-in;
-  animation-delay: 7s;
+  animation-delay: 3.5s;
   margin: 10px 0px 0px 0px;
 }
 @keyframes typing {
@@ -203,4 +207,12 @@ body{
   background-color: #ddd;
   transform: scale(1.05);
   transition: 0.1s;
+}
+#credits>h3{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0px;
+  padding-bottom: 0px;
+  opacity: 0.8;
 }
