@@ -1,0 +1,13 @@
+.image-element-class{
+  max-width: 290px;
+  padding: 5px;
+  border-radius: 14px;
+}
+@media only screen and (max-width: 600px) {
+  .image-element-class{
+    max-width: 150px;
+  }
+}
+#artworks-container{
+  margin: auto;
+}

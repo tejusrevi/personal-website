@@ -4,8 +4,7 @@ import Head from './head/Head'
 
 
 function Homepage(props){
-  const [context, setContext] = useState({})
-  props.promise.then((data)=>setContext(data['homepage']))
+  const [homepage, setHomepage] = useState(props.data.homepage)
   window.onload = function() {
       if(document.getElementById("intro-container") === null) return;
       document.getElementById("intro-container").style.top = document.getElementById("canvas").style.height.replace("px","")/1.6 + "px";
@@ -44,9 +43,9 @@ function Homepage(props){
           <div id="content">
               <div id="intro-container" className="initial">
                   <div id="intro" className="typewriter">
-                      <h1>{context['h1']}</h1>
-                      <h3>{context['h3']}</h3>
-                      <h4>{context['h4']}</h4>
+                      <h1>{homepage['heading']}</h1>
+                      <h3>{homepage['subHeading1']}</h3>
+                      <h4>{homepage['subHeading2']}</h4>
                   </div>
                   <div id="social" className="initial">
           
@@ -74,7 +73,7 @@ function Homepage(props){
                       <button className="more-button" onClick={ ()=> window.open('/about',"_self") }>More About Me</button>
                   </div>
                   <div id="credits">
-                    <h3>Handrafted with Reactjs by Tejus Revi</h3>
+                    <h3>{homepage['credits']}</h3>
                   </div>
               </div>
           </div>
