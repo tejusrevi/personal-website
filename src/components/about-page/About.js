@@ -5,7 +5,7 @@ import './About.css';
 function About(props) {
   const [about, setAbout] = useState(props.data.about)
   const [menu, setMenu] = useState("projects")
-  window.onload= ( )=>document.getElementById('projects').style.backgroundColor = '#b2b2b2';
+  window.onload= ( )=>document.getElementById('projects').style.background = '#b2b2b2';
   function handleButtonClick(value){
     var arrOfMenus = document.getElementsByClassName('menu-items')
     Array.prototype.forEach.call(arrOfMenus, function(el) {

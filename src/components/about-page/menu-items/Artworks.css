@@ -1,13 +1,26 @@
-.image-element-class{
-  max-width: 290px;
-  padding: 5px;
-  border-radius: 14px;
+.image-element{
+  max-width: 98%;
+  padding: 3px;
+  border-radius: 8px;
+}
+.image-element:hover{
+  transform: scale(1.02);
+  transition: 0.2s;
 }
 @media only screen and (max-width: 600px) {
-  .image-element-class{
-    max-width: 150px;
+  .image-element{
+    max-width: 100%;
   }
 }
-#artworks-container{
-  margin: auto;
+
+.my-masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
 }
