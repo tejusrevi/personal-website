@@ -23,8 +23,8 @@ function About(props) {
         <div id="profile-info">
           <div id="profile-image" style={{backgroundImage:`url(${about['image']})`}}/>
           <div id="content">
-          <h3>Tejus Revi</h3>
-            <h4>തേജസ് രവി</h4>
+          <h3>{about['name']}</h3>
+            <h4>{about['nameML']}</h4>
             <hr/>
             <h4>{about['jobTitle']}</h4>
             <h5>{about['location']}</h5>

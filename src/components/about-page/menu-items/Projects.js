@@ -4,8 +4,9 @@ import './Projects.css'
 function Projects(props){
   console.log(props.data)
   return(
-    <div>
-
+    <div id="projects-container">
+      <div className="project"></div>
+      <div className="project"></div>
     </div>
   )
 }
