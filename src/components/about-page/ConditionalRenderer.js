@@ -8,12 +8,12 @@ function ConditionalRenderer(props) {
   const [educationData, setEducationData] = useState(props.data.education)
   const [projectsData, setProjectsData] = useState(props.data.projects)
   const [artworksData, setArtworksData] = useState(props.data.artworks)
-
+  const [interestsData, setInterestsData] = useState(props.data.interests)
   if (props.menuItem === "education"){
     return (
       <div>
       <div id="menu-heading">
-        Education & Skills.
+        { props.menuItem }.
       </div>
         <Education data = {educationData}/>
       </div>
@@ -38,8 +38,11 @@ function ConditionalRenderer(props) {
     );
   }else if(props.menuItem === "interests"){
     return (
-      <div id="menu-heading">
-        { props.menuItem }.
+      <div>
+        <div id="menu-heading">
+          { props.menuItem }.
+        </div>
+        <Interests data = {interestsData}/>
       </div>
     );
   }

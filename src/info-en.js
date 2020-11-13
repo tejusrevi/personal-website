@@ -38,25 +38,67 @@ export default{
   projects:[
     {
       name: "Interactive Head",
-      hero:{
+      id:"interactive-head",
+      media:{
         type: "video",
-        src:""
+        src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Finteractive-head.mp4?alt=media&token=9ee8b24b-1b2d-449c-b9b6-60bdc9fd40e3"
       },
-      description: "A threejs based project that render a 3D model of human head onto a HTML canvas. The model is controlled real-time based on cursor position or gyroscopic movements.",
-      tags: ["JavaScript", "React", "HTML"],
-      github: "https://github.com/tejusrevi/interactive-human-face",
-      website: ""
+      description: "A threejs based project that render a 3D model of human head onto an HTML canvas. The model is controlled real-time based on cursor position or gyroscopic movements.",
+      tags: ["Blender", "JavaScript", "Threejs", "React", "HTML"],
+      links:[
+        {name: "GitHub",
+        href: "https://github.com/tejusrevi/interactive-human-face"},
+        {name: "Website",
+        href: ""}
+      ]
     },
     {
       name: "Mapogram",
-      hero:{
+      id:"mapogram",
+      media:{
         type: "video",
-        src:""
+        src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fmapogram.mp4?alt=media&token=7dd3d7f8-f4fd-4f1b-a64f-caebf9d8a2ee"
       },
       description: "A React based project that lets users save their favorite locations and street views on the world map.",
-      tags: ["Google CLoud Platform", "JavaScript", "React", "HTML"],
-      github: "https://github.com/tejusrevi/mapogram",
-      website: "https://map-o-gram.web.app/"
+      tags: ["Google Cloud Platform", "JavaScript", "React", "HTML", "CSS"],
+      links:[
+        {name: "GitHub",
+        href: "https://github.com/tejusrevi/mapogram"},
+        {name: "Website",
+        href: "https://map-o-gram.web.app"}
+      ]
+    },
+    {
+      name: "Star Wars Title Crawl",
+      id:"star-wars-title-crawl",
+      media:{
+        type: "video",
+        src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fstar-wars-title-crawl.mp4?alt=media&token=f7a62ca3-907e-4d00-bff1-0df012db5994"
+      },
+      description: "A threejs based project that render Star Wars opening title scene with user generated text.",
+      tags: ["JavaScript", "Threejs", "React", "HTML", "CSS"],
+      links:
+      [
+        {name: "GitHub",
+        href: "https://github.com/tejusrevi/star-wars-title-crawl"},
+        {name: "Website",
+        href: "https://star-wars-title.web.app/"}
+      ]
+    },
+    {
+      name: "Morse Code Translator",
+      id:"morse-code-translator",
+      media:{
+        type: "video",
+        src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fmorse-code-translator.mp4?alt=media&token=51535a27-5ebc-43fa-b1f0-56489c32a695"
+      },
+      description: "A web interface for translating English text into Morse Code using ITU standard. Provides visual and auditory output.",
+      tags: ["JavaScript", "React", "Vantajs", "HTML", "CSS"],
+      links:
+      [
+        {name: "GitHub",
+        href: "https://github.com/tejusrevi/morse-code-translator"}
+      ]
     }
   ],
   artworks:[
@@ -99,6 +141,13 @@ export default{
     {
       name: 'joker',
       src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/joker.jpeg?alt=media&token=825c5668-6d72-453b-9b6d-f0c7c6a043ae"
+    }
+  ],
+  interests:[
+    {
+      interest:"Shawarma",
+      linkText:"Blah",
+      link:"jhk"
     }
   ]
 }

@@ -1,18 +1,105 @@
 #projects-container{
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  min-height: 100vh;
+
 }
 .project{
-  min-width: 100px;
-  min-height: 100px;
-  background-color: red;
+  border: 1px solid #e4e4e4;
   margin: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  max-height: min-content;
+}
+.project:hover{
+  transform: scale(1.005);
+  transition: 0.2s;
 }
 @media only screen and (max-width: 600px) {
   #projects-container{
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    min-height: 100vh;
   }
+}
+.project-video{
+  margin: auto;
+  max-width: 100%;
+}
+.project-image{
+  margin: auto;
+  max-width: 100%;
+}
+.project-details{
+  padding: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.project-title{
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+.project-description{
+  font-weight: 300;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+.tags{
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.tags::-webkit-scrollbar {
+  display: none;
+}
+.tag{
+  margin: 5px;
+  padding: 7px 10px;
+  border-radius: 20px;
+  background-color: #e4e4e4;
+  flex-shrink:0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b6b6b;
+}
+.links{
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.links::-webkit-scrollbar {
+  display: none;
+}
+.link{
+  margin: 5px;
+  padding: 7px 10px;
+  border-radius: 20px;
+  background-color: #e4e4e4;
+  flex-shrink:0;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+}
+.link>a{
+  font-weight: 600;
+  color: #6b6b6b;
+  text-decoration: none;
+}
+.GitHub-image{
+  background-image: url(../../../images/GitHub.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 3px;
+  min-width: 20px;
+  min-height: 20px;
+}
+.Website-image{
+  background-image: url(../../../images/Website.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 3px;
+  min-width: 18px;
+  min-height: 18px;
 }
