@@ -54,7 +54,8 @@ button{
   }
   to {
     opacity: 0.9;
-    max-width: 30%;
+    min-width: fit-content;
+    max-width: 35%;
   }
 }
 @media only screen and (max-width: 600px) {

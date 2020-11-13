@@ -48,6 +48,7 @@
   flex-direction: row;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  flex-wrap: wrap;
 }
 .tags::-webkit-scrollbar {
   display: none;

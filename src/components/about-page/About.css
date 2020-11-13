@@ -133,6 +133,7 @@ body{
     grid-column-end: 6;
     max-height: 230px;
     min-width: 95%;
+    margin-top: 5px;
   }
   #details{
     grid-column-start: 1;
@@ -143,6 +144,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     min-width: 90%;
+    min-height: 160px;
   }
   #profile-image{
     min-width: 8rem;
@@ -218,5 +220,9 @@ hr{
   .menu-items{
     font-size: 14px;
     width: fit-content;
+  }
+  #render-area{
+    margin: 5px;
+    padding: 10px;
   }
 }
