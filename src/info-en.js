@@ -49,7 +49,7 @@ export default{
         {name: "GitHub",
         href: "https://github.com/tejusrevi/interactive-human-face"},
         {name: "Website",
-        href: ""}
+        href: "https://interactive-head.web.app/"}
       ]
     },
     {
@@ -145,9 +145,45 @@ export default{
   ],
   interests:[
     {
+      interest:"Agam Band",
+      link:"https://youtu.be/zkvNnRjIhPE?t=31"
+    },
+    {
+      interest:"MCU",
+    },
+    {
       interest:"Shawarma",
-      linkText:"Blah",
-      link:"jhk"
+    },
+    {
+      interest:"Anything by Hans Zimmer"
+    },
+    {
+      interest:"Prakash Lab at StanfordU",
+      link:"http://web.stanford.edu/group/prakash-lab/cgi-bin/labsite/research/frugal-science-and-global-health/"
+    },
+    {
+      interest:"r/wholesomememes",
+      link:"https://www.reddit.com/r/wholesomememes/"
+    },
+    {
+      interest:"Healthcare IT",
+    },
+    {
+      interest:"Pencil Portraiture",
+    },
+    {
+      interest:"Anthropology",
+    },
+    {
+      interest:"Essentialism",
+      link:"https://en.wikipedia.org/wiki/Essentialism#:~:text=Essentialism%20is%20the%20view%20that,idea%22%20or%20%22form%22."
+    },
+    {
+      interest:"Film Theorists",
+      link:"https://www.youtube.com/user/FilmTheorists"
+    },
+    {
+      interest:"Cello covers (esp. The Piano Guys)"
     }
   ]
 }

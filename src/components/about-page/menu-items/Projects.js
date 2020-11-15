@@ -5,7 +5,7 @@ import './Projects.css'
 function Projects(props){
   const projects = props.data.map(element => {
     return(
-      <div className="project" id={element.id}>
+      <div className="project" id={element.id} key={element.id}>
         <FadeIn delay={0}>
         {element.media.type === 'video' ? (
         <video className="project-video" src={element.media.src} autoPlay='autoplay' loop='loop' muted='muted'/>
@@ -17,13 +17,13 @@ function Projects(props){
         <div className="project-description">{element.description}</div>
         <div className="tags">
           {element.tags.map(tag=>{
-            return <div className="tag">{tag}</div>
+            return <div className="tag" key={tag}>{tag}</div>
           })}
         </div>
         <div>Links</div>
         <div className="links">
           {element.links.map(link=>{
-            return <div className="link"><div className={link.name+"-image"}/><a href={link.href} target="_blank">{link.name}</a></div>
+            return <div className="link" key={link.name}><div className={link.name+"-image"}/><a href={link.href} target="_blank">{link.name}</a></div>
           })}
         </div>
       </div>
