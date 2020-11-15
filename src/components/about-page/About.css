@@ -212,7 +212,6 @@ hr{
 }
 #render-area{
   margin: 10px;
-  min-height: 500px;
   padding: 30px;
   border-radius: 12px;
 }
@@ -224,5 +223,6 @@ hr{
   #render-area{
     margin: 5px;
     padding: 10px;
+    min-height: 70vh;
   }
 }
