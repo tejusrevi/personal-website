@@ -2,19 +2,13 @@ import React from 'react';
 import './Artworks.css';
 import FadeIn from 'react-fade-in';
 import Masonry from 'react-masonry-css'
-import Art from '../../single-art-page/Art'
-const masonryOptions = {
-  transitionDuration: 0
-};
-
-const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 function Artworks(props){
   const childElements = props.data.map(function(element){
     return (
       <div className='image-element-container' key={element.name}>
         <FadeIn delay={500}>
-          <img className="image-element" src={element.src} onClick={()=>window.open( `/art/${element.name}`)}/>
+          <img className="image-element" src={element.src}  alt="art" onClick={()=>window.open( `/artworks/${element.name}`)}/>
         </FadeIn>
       </div>
      );

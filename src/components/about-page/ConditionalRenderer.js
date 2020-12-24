@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Education from './menu-items/Education'
 import Projects from './menu-items/Projects'
 import Artworks from './menu-items/Artworks'
@@ -7,6 +7,7 @@ import './ConditionalRenderer.css'
 function ConditionalRenderer(props) {
   const [educationData, setEducationData] = useState(props.data.education)
   const [projectsData, setProjectsData] = useState(props.data.projects)
+  const [tagsData, setTagsData] = useState(props.data.tags)
   const [artworksData, setArtworksData] = useState(props.data.artworks)
   const [interestsData, setInterestsData] = useState(props.data.interests)
   if (props.menuItem === "education"){
@@ -24,7 +25,7 @@ function ConditionalRenderer(props) {
         <div id="menu-heading">
           { props.menuItem }.
         </div>
-        <Projects data = {projectsData}/>
+        <Projects data = {projectsData} tags={tagsData}/>
       </div>
     );
   }else if(props.menuItem === "artworks"){

@@ -1,29 +1,64 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FadeIn from 'react-fade-in';
 import './Projects.css'
 
 function Projects(props){
-  const projects = props.data.map(element => {
+  const [projectsArr, setProjectsArr] = useState(props.data);
+  const [tagsArr, setTagsArr] = useState(props.tags);
+
+  const tagColors = {
+    "topic": "#e2e2df",
+    "language": "#E2CFC4",
+    "framework": "#F7D9C4",
+    "platform": "#C9E4DE",
+    "library": "#C6DEF1",
+    "database": "#DBCDF0",
+    "format": "#FAEDCB",
+  }
+
+  function handleTagClick(tag){
+    if(tag === "all") setProjectsArr(props.data);
+    else{
+      var arr = []
+      console.log(tag)
+      props.data.forEach(project => {
+        if(project.tags.includes(tag)) arr.push(project)
+      });
+      setProjectsArr(arr)
+    }
+  }
+  function handleShowTags(){
+    if(document.getElementById("tag-options").style.height == "0px"){
+      document.getElementById("tag-options").style.height = "100%";
+      document.getElementById("show-tags").innerHTML = "Hide tags"
+    }
+    else {
+      document.getElementById("tag-options").style.height = "0px"
+      document.getElementById("show-tags").innerHTML = "Show tags"
+    }
+  }
+  
+  const projects = projectsArr.map(element => {
     return(
       <div className="project" id={element.id} key={element.id}>
         <FadeIn delay={0}>
         {element.media.type === 'video' ? (
         <video className="project-video" src={element.media.src} autoPlay='autoplay' loop='loop' muted='muted'/>
       ) : (
-        <img className="project-image" src={element.media.src}/>
+        <img className="project-image" src={element.media.src} alt="project"/>
       )}
       <div className="project-details">
         <div className="project-title">{element.name}</div>
         <div className="project-description">{element.description}</div>
         <div className="tags">
           {element.tags.map(tag=>{
-            return <div className="tag" key={tag}>{tag}</div>
+            return <div onClick= {()=>handleTagClick(tag)} className="tag" key={tag}>{tag}</div>
           })}
         </div>
-        <div>Links</div>
+        <span>Links</span>
         <div className="links">
           {element.links.map(link=>{
-            return <div className="link" key={link.name}><div className={link.name+"-image"}/><a href={link.href} target="_blank">{link.name}</a></div>
+            return <div className="link" key={link.name}><div className={link.name+"-image"}/><a href={link.href} target="_blank" rel="noopener noreferrer">{link.name}</a></div>
           })}
         </div>
       </div>
@@ -31,9 +66,29 @@ function Projects(props){
       </div>
     )
   });
+
+  const tags = tagsArr.map(element=>{
+    return(
+      <button className="tag-option" 
+      onClick={()=>handleTagClick(element.name)} 
+      key={element.name} 
+      style={{backgroundColor:tagColors[element.type]}}>
+        {element.name}
+      </button>      
+    )
+  })
   return(
-    <div id="projects-container">
-      {projects}
+    <div>
+      <div id="tag-options" style={{height:"0px"}}>
+        {tags}
+        <button className="tag-option" onClick={()=>handleTagClick("all")}>All</button>
+      </div>
+      <div id="show-tags-container">
+        <button id="show-tags" onClick={handleShowTags}>Show Tags</button>
+      </div>
+      <div id="projects-container">
+        {projects}
+      </div>
     </div>
   )
 }
