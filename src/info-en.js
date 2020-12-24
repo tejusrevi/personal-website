@@ -29,11 +29,10 @@ export default{
   ],
   skills:{
     languages: ["JavaScript", "Python", "Java", "PHP"],
-    web: ["Django", "React", "NodeJS"],
+    web: ["Django", "ReactJS", "NodeJS"],
     mobile: ["Android", "React Native"],
     data: ["numpy"],
-    cloud: ["Firebase", "Digital Ocean"],
-    skill: "My strongest suits are JavaScript and Python. I have had the opputunity to learn Java in depth from my time at Algonquin College."
+    cloud: ["Firebase", "Digital Ocean"]
   },
   projects:[
     {
@@ -44,7 +43,7 @@ export default{
         src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Finteractive-head.mp4?alt=media&token=9ee8b24b-1b2d-449c-b9b6-60bdc9fd40e3"
       },
       description: "A threejs based project that render a 3D model of human head onto an HTML canvas. The model is controlled real-time based on cursor position or gyroscopic movements.",
-      tags: ["Blender", "JavaScript", "Threejs", "React", "HTML"],
+      tags: ["3D Modeling", "JavaScript", "Threejs", "ReactJS", "HTML"],
       links:[
         {name: "GitHub",
         href: "https://github.com/tejusrevi/interactive-human-face"},
@@ -60,7 +59,7 @@ export default{
         src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fmapogram.mp4?alt=media&token=7dd3d7f8-f4fd-4f1b-a64f-caebf9d8a2ee"
       },
       description: "A React based project that lets users save their favorite locations and street views on the world map.",
-      tags: ["Google Cloud Platform", "JavaScript", "React", "HTML", "CSS"],
+      tags: ["Web Dev", "Google Cloud Platform", "Firebase", "JavaScript", "ReactJS", "HTML", "CSS"],
       links:[
         {name: "GitHub",
         href: "https://github.com/tejusrevi/mapogram"},
@@ -76,7 +75,7 @@ export default{
         src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fstar-wars-title-crawl.mp4?alt=media&token=f7a62ca3-907e-4d00-bff1-0df012db5994"
       },
       description: "A threejs based project that render Star Wars opening title scene with user generated text.",
-      tags: ["JavaScript", "Threejs", "React", "HTML", "CSS"],
+      tags: ["JavaScript", "Threejs", "Firebase", "ReactJS", "HTML", "CSS"],
       links:
       [
         {name: "GitHub",
@@ -93,7 +92,7 @@ export default{
         src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fmorse-code-translator.mp4?alt=media&token=51535a27-5ebc-43fa-b1f0-56489c32a695"
       },
       description: "A web interface for translating English text into Morse Code using ITU standard. Provides visual and auditory output.",
-      tags: ["JavaScript", "React", "Vantajs", "HTML", "CSS"],
+      tags: ["JavaScript", "ReactJS", "Vantajs", "HTML", "CSS"],
       links:
       [
         {name: "GitHub",
@@ -108,13 +107,67 @@ export default{
         src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fmovie-catalog.mp4?alt=media&token=e8087704-952b-452b-9763-6d2e992004fb"
       },
       description: "Capstone project for CST8276 Advanced Database course done with a group of 3 members. The project involved sourcing movie data, building a web catalog and recommending similiar movies based on user selection.",
-      tags: ["Django", "Python", "BS4", "MongoDB", "NoSQL", "PyMongo", "JSON", "Data Science", "HTML", "CSS"],
+      tags: ["Django", "Python", "BS4", "MongoDB", "NoSQL", "Web Dev", "PyMongo", "JSON", "Data Science", "HTML", "CSS"],
       links:
       [
         {name: "Demo",
         href: "https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/demo%2Fmovie-catalog-demo.mp4?alt=media&token=d457c88b-5f7b-4b0d-969a-26661a5f18d7"}
       ]
     }
+  ],
+  tags:[
+    {
+      name: "Web Dev",
+      type: "topic"
+    },
+    {
+      name: "Data Science",
+      type: "topic"
+    },
+    {
+      name: "JavaScript",
+      type: "language"
+    },
+    {
+      name: "Python",
+      type: "language"
+    },
+    {
+      name: "ReactJS",
+      type: "framework"
+    },
+    {
+      name: "Django",
+      type: "framework"
+    },
+    {
+      name: "Threejs",
+      type: "library"
+    },
+    {
+      name: "MongoDB",
+      type: "database"
+    },
+    {
+      name: "Firebase",
+      type: "platform"
+    },
+    {
+      name: "Google Cloud Platform",
+      type: "platform"
+    },
+    {
+      name: "HTML",
+      type: "format"
+    },
+    {
+      name: "CSS",
+      type: "format"
+    },
+    {
+      name: "NoSQL",
+      type: "format"
+    },
   ],
   artworks:[
     {

@@ -4,13 +4,38 @@ import './Projects.css'
 
 function Projects(props){
   const [projectsArr, setProjectsArr] = useState(props.data);
-  const [tagsArr, setTagsArr] = useState([]);
+  const [tagsArr, setTagsArr] = useState(props.tags);
+
+  const tagColors = {
+    "topic": "#e2e2df",
+    "language": "#E2CFC4",
+    "framework": "#F7D9C4",
+    "platform": "#C9E4DE",
+    "library": "#C6DEF1",
+    "database": "#DBCDF0",
+    "format": "#FAEDCB",
+  }
+
   function handleTagClick(tag){
-    var arr = []
-    props.data.forEach(project => {
-      if(project.tags.includes(tag.tag)) arr.push(project)
-    });
-    setProjectsArr(arr)
+    if(tag === "all") setProjectsArr(props.data);
+    else{
+      var arr = []
+      console.log(tag)
+      props.data.forEach(project => {
+        if(project.tags.includes(tag)) arr.push(project)
+      });
+      setProjectsArr(arr)
+    }
+  }
+  function handleShowTags(){
+    if(document.getElementById("tag-options").style.height == "0px"){
+      document.getElementById("tag-options").style.height = "100%";
+      document.getElementById("show-tags").innerHTML = "Hide tags"
+    }
+    else {
+      document.getElementById("tag-options").style.height = "0px"
+      document.getElementById("show-tags").innerHTML = "Show tags"
+    }
   }
   
   const projects = projectsArr.map(element => {
@@ -27,7 +52,7 @@ function Projects(props){
         <div className="project-description">{element.description}</div>
         <div className="tags">
           {element.tags.map(tag=>{
-            return <div onClick= {()=>handleTagClick({tag})} className="tag" key={tag}>{tag}</div>
+            return <div onClick= {()=>handleTagClick(tag)} className="tag" key={tag}>{tag}</div>
           })}
         </div>
         <span>Links</span>
@@ -41,9 +66,29 @@ function Projects(props){
       </div>
     )
   });
+
+  const tags = tagsArr.map(element=>{
+    return(
+      <button className="tag-option" 
+      onClick={()=>handleTagClick(element.name)} 
+      key={element.name} 
+      style={{backgroundColor:tagColors[element.type]}}>
+        {element.name}
+      </button>      
+    )
+  })
   return(
-    <div id="projects-container">
-      {projects}
+    <div>
+      <div id="tag-options" style={{height:"0px"}}>
+        {tags}
+        <button className="tag-option" onClick={()=>handleTagClick("all")}>All</button>
+      </div>
+      <div id="show-tags-container">
+        <button id="show-tags" onClick={handleShowTags}>Show Tags</button>
+      </div>
+      <div id="projects-container">
+        {projects}
+      </div>
     </div>
   )
 }
