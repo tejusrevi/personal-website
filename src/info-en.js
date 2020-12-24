@@ -3,7 +3,7 @@ export default{
     heading: "Hey there! I'm Tejus",
     subHeading1: "I build cool stuff with code",
     subHeading2: "",
-    credits: "© Handrafted with Reactjs by Tejus Revi",
+    credits: "© Handcrafted with Reactjs by Tejus Revi",
     repoText: "Show me the code"
   },
   about:{
@@ -15,7 +15,7 @@ export default{
   },
   education:[
     {
-      name:"Algonquin School of Advanced Technology",
+      name:"Algonquin College School of Advanced Technology",
       type:"Associate's Degree • Computer Programming",
       date:"2018 -2020",
       icon:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/ac.png?alt=media&token=9c1c62ac-8098-4c72-91e1-68a56601b736"
@@ -98,6 +98,21 @@ export default{
       [
         {name: "GitHub",
         href: "https://github.com/tejusrevi/morse-code-translator"}
+      ]
+    },
+    {
+      name: "Movie Catalog + Recommendation Engine (Academic Project)",
+      id:"movie-catalog",
+      media:{
+        type: "video",
+        src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fmovie-catalog.mp4?alt=media&token=e8087704-952b-452b-9763-6d2e992004fb"
+      },
+      description: "Capstone project for CST8276 Advanced Database course done with a group of 3 members. The project involved sourcing movie data, building a web catalog and recommending similiar movies based on user selection.",
+      tags: ["Django", "Python", "BS4", "MongoDB", "NoSQL", "PyMongo", "JSON", "Data Science", "HTML", "CSS"],
+      links:
+      [
+        {name: "Demo",
+        href: "https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/demo%2Fmovie-catalog-demo.mp4?alt=media&token=d457c88b-5f7b-4b0d-969a-26661a5f18d7"}
       ]
     }
   ],

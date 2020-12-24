@@ -4,19 +4,22 @@ import './About.css';
 
 function About(props) {
   const [about, setAbout] = useState(props.data.about)
-  const [menu, setMenu] = useState("projects")
-  window.onload= ( )=>document.getElementById('projects').style.background = '#b2b2b2';
+  const [menu, setMenu] = useState(props.menu)
+  window.onload= ( )=>document.getElementById(props.menu).style.background = '#b2b2b2';
   function handleButtonClick(value){
-    var arrOfMenus = document.getElementsByClassName('menu-items')
+    var arrOfMenus = document.getElementsByClassName('menu-items');
+    window.history.pushState('value', 'value', `/${value}`);
     Array.prototype.forEach.call(arrOfMenus, function(el) {
       if (el.id === value){
         el.style.backgroundColor = '#b2b2b2'
       }else{
         el.style.backgroundColor = '#f5f5f5'
       }
-  });
+    });
+  
     setMenu(value)
   }
+
   return (
     <div id="container">
       <div id="profile-container">
@@ -41,8 +44,7 @@ function About(props) {
             <a id="gmail" target="_blank" rel="noopener noreferrer" href="mailto:tejusrevi@gmail.com">
                 <div id="gmail-image" className="social-icon-about"/>
             </a>
-
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -51,7 +53,9 @@ function About(props) {
           <button id="projects" className="menu-items" onClick={()=>handleButtonClick("projects")}>Projects</button>
           <button id="education" className="menu-items" onClick={()=>handleButtonClick("education")}>Education</button>
           <button id="artworks" className="menu-items" onClick={()=>handleButtonClick("artworks")}>Artworks</button>
-          <button id="interests" className="menu-items" onClick={()=>handleButtonClick("interests")}>Interests</button>
+          {/**
+           * <button id="interests" className="menu-items" onClick={()=>handleButtonClick("interests")}>Interests</button>
+           */}
         </div>
         <div id="render-area">
           <ConditionalRenderer menuItem = {menu} data={props.data}/>

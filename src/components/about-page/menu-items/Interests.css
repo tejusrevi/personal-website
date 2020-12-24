@@ -3,6 +3,10 @@
   padding: 3px 5px;
 }
 .external-link{
+  color: #182742;
+  text-decoration: none;
+}
+.external-link-image{
   display: inline-block;
   min-width: 16px;
   min-height: 16px;

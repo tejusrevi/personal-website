@@ -4,6 +4,7 @@ import Head from './head/Head'
 
 
 function Homepage(props){
+  console.log('%cTejus says hi :)', 'color: white;background: black;font-size: 3em;');
   const [homepage, setHomepage] = useState(props.data.homepage)
   window.onload = function() {
       if(document.getElementById("intro-container") === null) return;
@@ -70,7 +71,7 @@ function Homepage(props){
           
                   </div>
                   <div id="more">
-                      <button className="more-button" onClick={ ()=> window.open('/about',"_self") }>More About Me</button>
+                      <button className="more-button" onClick={ ()=> window.open('/projects',"_self") }>More About Me</button>
                   </div>
                   <div id="credits">
                     <h3>{homepage['credits']}</h3>

@@ -7,12 +7,10 @@ function Interests(props){
     return(
       <FadeIn>
         <li className="interest" key={element.interest}>
-          {element.interest}
           {element.hasOwnProperty('link')?
-          <span className="external-link" onClick={()=>{window.open(element.link)}}>
-          </span>
+          <a className="external-link" href={element.link}>{element.interest}<span className="external-link-image"/></a>
           :
-          ''}
+          <span>{element.interest}</span>}
         </li>
         </FadeIn>
     )

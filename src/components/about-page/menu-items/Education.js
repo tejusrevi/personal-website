@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './Education.css'
-import FadeIn, {FadeInProps} from 'react-fade-in'
+import FadeIn from 'react-fade-in'
 function Education(props){
-  console.log(props.data)
   return(
     <div id="education-container">
       <h3 className="about-sub">Education</h3>

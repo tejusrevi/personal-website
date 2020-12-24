@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Education from './menu-items/Education'
 import Projects from './menu-items/Projects'
 import Artworks from './menu-items/Artworks'
