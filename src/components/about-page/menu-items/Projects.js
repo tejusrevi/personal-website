@@ -20,7 +20,6 @@ function Projects(props){
     if(tag === "all") setProjectsArr(props.data);
     else{
       var arr = []
-      console.log(tag)
       props.data.forEach(project => {
         if(project.tags.includes(tag)) arr.push(project)
       });
@@ -30,11 +29,11 @@ function Projects(props){
   function handleShowTags(){
     if(document.getElementById("tag-options").style.height == "0px"){
       document.getElementById("tag-options").style.height = "100%";
-      document.getElementById("show-tags").innerHTML = "Hide tags"
+      document.getElementById("show-tags").innerHTML = "Hide Filters ";
     }
     else {
       document.getElementById("tag-options").style.height = "0px"
-      document.getElementById("show-tags").innerHTML = "Show tags"
+      document.getElementById("show-tags").innerHTML = "Filter Projects"
     }
   }
   
@@ -84,7 +83,7 @@ function Projects(props){
         <button className="tag-option" onClick={()=>handleTagClick("all")}>All</button>
       </div>
       <div id="show-tags-container">
-        <button id="show-tags" onClick={handleShowTags}>Show Tags</button>
+        <button id="show-tags" onClick={handleShowTags}>Filter Projects <div id="down-arrow"/></button>
       </div>
       <div id="projects-container">
         {projects}

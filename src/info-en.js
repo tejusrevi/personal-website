@@ -9,7 +9,7 @@ export default{
   about:{
     name: "Tejus Revi",
     nameML: "തേജസ് രവി",
-    jobTitle: "Student @ Algonquin College",
+    jobTitle: "Hobbyist Programmer",
     location: "Ottawa, Canada",
     image:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/tejus-square-min.jpeg?alt=media&token=16b354cc-8928-42a8-bca0-fbf9f508aba0"
   },
@@ -18,13 +18,46 @@ export default{
       name:"Algonquin College School of Advanced Technology",
       type:"Associate's Degree • Computer Programming",
       date:"2018 -2020",
-      icon:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/ac.png?alt=media&token=9c1c62ac-8098-4c72-91e1-68a56601b736"
+      icon:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/ac.png?alt=media&token=9c1c62ac-8098-4c72-91e1-68a56601b736",
+      years:[
+        {
+          year: 1,
+          courses:[
+            "CST2355 - Database Systems",
+            "CST8102 - Operating System Fundamentals (GNU/Linux)",
+            "CST8284 - Object Oriented Programming (Java)",
+            "CST8285 - Web Programming",
+            "ENL2019 - Technical Communication for Engineering Technologies",
+            "CST8101 - Computer Essentials", 
+            "CST8116 - Introduction to Computer Programming",
+            "CST8215 - Introduction to Database",
+            "MAT8001 - Technical Mathematics for Computer Science",
+            "CST8300 - Achieving Success in Changing Environments",
+            "ENL1813 - Communications I"
+          ]
+        },
+        {
+          year: 2,
+          courses:[
+            "CST8277 - Enterprise Application Programming",
+            "CST8333 - Programming Language Research Project",
+            "CST8276 - Advanced Database Topics",
+            "CST8334 - Software Development Project",
+            "CST2234 - Systems Analysis and Design",
+            "CST2335 - Mobile Graphical Interface Programming",
+            "CST8109 - Network Programming",
+            "CST8288 - Object Oriented Programming with Design Patterns",
+            "CST8390 - Business Intelligence and Data Analytics",
+          ]
+        }
+      ]
     },
     {
       name:"Central Board of Secondary Education",
-      type:"High School • Maths and Computer Science",
+      type:"High School • Mathematics and Computer Science",
       date:"2016 -2018",
-      icon:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/cbse.png?alt=media&token=e431dcac-9fc8-4600-99bb-decf994a0163"
+      icon:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/cbse.png?alt=media&token=e431dcac-9fc8-4600-99bb-decf994a0163",
+      years:[]
     }
   ],
   skills:{
@@ -59,7 +92,7 @@ export default{
         src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fmapogram.mp4?alt=media&token=7dd3d7f8-f4fd-4f1b-a64f-caebf9d8a2ee"
       },
       description: "A React based project that lets users save their favorite locations and street views on the world map.",
-      tags: ["Web Dev", "Google Cloud Platform", "Firebase", "JavaScript", "ReactJS", "HTML", "CSS"],
+      tags: ["Web", "Google Cloud Platform", "Firebase", "JavaScript", "ReactJS", "HTML", "CSS"],
       links:[
         {name: "GitHub",
         href: "https://github.com/tejusrevi/mapogram"},
@@ -104,24 +137,43 @@ export default{
       id:"movie-catalog",
       media:{
         type: "video",
-        src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fmovie-catalog.mp4?alt=media&token=e8087704-952b-452b-9763-6d2e992004fb"
+        src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fmovie-catalog.mp4?alt=media&token=d114b5ea-8c9a-49a5-8bb1-1256837eeaa3"
       },
       description: "Capstone project for CST8276 Advanced Database course done with a group of 3 members. The project involved sourcing movie data, building a web catalog and recommending similiar movies based on user selection.",
-      tags: ["Django", "Python", "BS4", "MongoDB", "NoSQL", "Web Dev", "PyMongo", "JSON", "Data Science", "HTML", "CSS"],
+      tags: ["Django", "Python", "BS4", "MongoDB", "NoSQL", "Web", "PyMongo", "JSON", "Data Science", "HTML", "CSS"],
       links:
       [
         {name: "Demo",
         href: "https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/demo%2Fmovie-catalog-demo.mp4?alt=media&token=d457c88b-5f7b-4b0d-969a-26661a5f18d7"}
       ]
+    },
+    {
+      name: "Guardian News App (Academic Project)",
+      id:"guardian",
+      media:{
+        type: "video",
+        src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fguardian.mp4?alt=media&token=db0b8b2d-46dd-420d-a8d6-f07a9ea9fc31"
+      },
+      description: "Capstone project for CST2335 Mobile Graphics Programming course done with a group of 4 members. The project displays news articles collected using Guardian API, along with CRUD actions on the data.",
+      tags: ["Mobile", "Android", "Java", "API"],
+      links:
+      [
+        {name: "APK",
+        href: "https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/downloadables%2Fapp-release.apk?alt=media&token=d0d54c3c-027c-42d7-b6e1-fbaf6c223630"}
+      ]
     }
   ],
   tags:[
     {
-      name: "Web Dev",
+      name: "Web",
       type: "topic"
     },
     {
       name: "Data Science",
+      type: "topic"
+    },
+    {
+      name: "Mobile",
       type: "topic"
     },
     {
@@ -130,6 +182,10 @@ export default{
     },
     {
       name: "Python",
+      type: "language"
+    },
+    {
+      name: "Java",
       type: "language"
     },
     {
