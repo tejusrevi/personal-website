@@ -30,3 +30,33 @@
   opacity: 0.6;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
+.show-courses{
+  padding: 5px 5px;
+  background-color: #ffffff;
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b6b6b;
+  border: 0px;
+  outline: none;
+}
+.course{
+  font-size: 0.9rem;
+}
+.course-buttons{
+  display: flex;
+}
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+}
+#course-container{
+  position: relative;
+}
+.close-button{
+  border-radius: 50%;
+  border: 0px;
+  outline: none;
+  width: 25px;
+  height: 25px;
+}

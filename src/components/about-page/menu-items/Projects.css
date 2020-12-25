@@ -97,9 +97,12 @@
 #show-tags-container{
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 #show-tags{
-  padding: 10px 10px;
+  padding: 10px 10px 0px 10px;
+  width: fit-content;
+  border-radius: 20px;
   background-color: #ffffff;
   flex-shrink:0;
   font-size: 1rem;
@@ -107,6 +110,17 @@
   color: #6b6b6b;
   border: 0px;
   outline: none;
+  margin: auto;
+}
+#down-arrow{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  min-height: 25px;
+  margin: auto;
+  filter: contrast(0.2);
+  background: url('../../../images/down.gif');
+  transform: rotate(0deg);
 }
 .links{
   overflow-x: auto;
@@ -154,6 +168,14 @@
 }
 .Demo-image{
   background-image: url(../../../images/Demo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 3px;
+  min-width: 18px;
+  min-height: 18px;
+}
+.APK-image{
+  background-image: url(../../../images/APK.png);
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 3px;

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import ConditionalRenderer from './ConditionalRenderer'
 import './About.css';
 
+console.log('%cTejus says hi :)', 'color: white;background: black;font-size: 3em;');
 function About(props) {
   const [about, setAbout] = useState(props.data.about)
   const [menu, setMenu] = useState(props.menu)
