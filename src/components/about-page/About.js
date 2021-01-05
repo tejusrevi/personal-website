@@ -53,10 +53,7 @@ function About(props) {
         <div id="menu">
           <button id="projects" className="menu-items" onClick={()=>handleButtonClick("projects")}>Projects</button>
           <button id="education" className="menu-items" onClick={()=>handleButtonClick("education")}>Education</button>
-          <button id="artworks" className="menu-items" onClick={()=>handleButtonClick("artworks")}>Artworks</button>
-          {/**
-           * <button id="interests" className="menu-items" onClick={()=>handleButtonClick("interests")}>Interests</button>
-           */}
+          <button id="drawings" className="menu-items" onClick={()=>handleButtonClick("drawings")}>Drawings</button>
         </div>
         <div id="render-area">
           <ConditionalRenderer menuItem = {menu} data={props.data}/>

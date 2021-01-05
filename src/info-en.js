@@ -9,7 +9,7 @@ export default{
   about:{
     name: "Tejus Revi",
     nameML: "തേജസ് രവി",
-    jobTitle: "Hobbyist Programmer",
+    jobTitle: "Student at MUN",
     location: "Ottawa, Canada",
     image:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/tejus-square-min.jpeg?alt=media&token=16b354cc-8928-42a8-bca0-fbf9f508aba0"
   },
@@ -133,6 +133,21 @@ export default{
       ]
     },
     {
+      name: "Password Book",
+      id:"password-manager",
+      media:{
+        type: "video",
+        src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/projects%2Fpm.mp4?alt=media&token=806551a8-556e-482f-a56b-1bd8ad5e3a43"
+      },
+      description: "Desktop application that lets users save multiple passwords, all of which can be accessed using a master key. All paswords are stored in a text file in encrypted format.",
+      tags: ["Python", "Tkinter", "Desktop"],
+      links:
+      [
+        {name: "GitHub",
+        href: "https://github.com/tejusrevi/password-manager"}
+      ]
+    },
+    {
       name: "Movie Catalog + Recommendation Engine (Academic Project)",
       id:"movie-catalog",
       media:{
@@ -166,6 +181,10 @@ export default{
   tags:[
     {
       name: "Web",
+      type: "topic"
+    },
+    {
+      name: "Desktop",
       type: "topic"
     },
     {
@@ -225,7 +244,7 @@ export default{
       type: "format"
     },
   ],
-  artworks:[
+  drawings:[
     {
       name: 'pursuit-of-happyness',
       src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/pursuit_of_happyness.jpg?alt=media&token=b80a257d-09fd-4dc6-8b94-f5e94d3c259a"
@@ -265,49 +284,6 @@ export default{
     {
       name: 'joker',
       src:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/joker.jpeg?alt=media&token=825c5668-6d72-453b-9b6d-f0c7c6a043ae"
-    }
-  ],
-  interests:[
-    {
-      interest:"Agam Band",
-      link:"https://youtu.be/zkvNnRjIhPE?t=31"
-    },
-    {
-      interest:"MCU",
-    },
-    {
-      interest:"Shawarma",
-    },
-    {
-      interest:"Anything by Hans Zimmer"
-    },
-    {
-      interest:"Prakash Lab at StanfordU",
-      link:"http://web.stanford.edu/group/prakash-lab/cgi-bin/labsite/research/frugal-science-and-global-health/"
-    },
-    {
-      interest:"r/wholesomememes",
-      link:"https://www.reddit.com/r/wholesomememes/"
-    },
-    {
-      interest:"Healthcare IT",
-    },
-    {
-      interest:"Pencil Portraiture",
-    },
-    {
-      interest:"Anthropology",
-    },
-    {
-      interest:"Essentialism",
-      link:"https://en.wikipedia.org/wiki/Essentialism#:~:text=Essentialism%20is%20the%20view%20that,idea%22%20or%20%22form%22."
-    },
-    {
-      interest:"Film Theorists",
-      link:"https://www.youtube.com/user/FilmTheorists"
-    },
-    {
-      interest:"Cello covers (esp. The Piano Guys)"
     }
   ]
 }

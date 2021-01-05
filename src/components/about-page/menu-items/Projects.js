@@ -8,10 +8,10 @@ function Projects(props){
 
   const tagColors = {
     "topic": "#e2e2df",
-    "language": "#E2CFC4",
+    "language": "#C6DEF1",
     "framework": "#F7D9C4",
     "platform": "#C9E4DE",
-    "library": "#C6DEF1",
+    "library": "#E2CFC4",
     "database": "#DBCDF0",
     "format": "#FAEDCB",
   }
