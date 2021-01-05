@@ -15,7 +15,7 @@ function App() {
         <Route path="/about" component={()=><About data={data} menu="projects"/>} />
         <Route path="/projects" component={()=><About data={data} menu="projects"/>} />
         <Route path="/education" component={()=><About data={data} menu="education"/>} />
-        <Route path="/artworks" component={()=><About data={data} menu="artworks"/>} />
+        <Route path="/drawings" component={()=><About data={data} menu="drawings"/>} />
         <Route component={()=><Homepage data={data}/>} />
       </Switch>
     </div>
