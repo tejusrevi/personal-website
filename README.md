@@ -1,5 +1,3 @@
-Build by Tejus Revi using ReactJS
-
 This is the source code for my [portfolio website](https://tejus-dev.web.app/). 
 
 The initial screen is a fork of [tejusrevi/interactive-human-face](https://github.com/tejusrevi/interactive-human-face).
