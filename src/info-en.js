@@ -3,14 +3,18 @@ export default{
     heading: "Hey there! I'm Tejus",
     subHeading1: "I build cool stuff with code",
     subHeading2: "",
-    credits: "© Handcrafted with Reactjs by Tejus Revi",
-    repoText: "Show me the code"
+    credit: "© Handcrafted with Reactjs by Tejus Revi",
+    srcText: "View source code",
+    srcLink: "https://github.com/tejusrevi/personal-website"
   },
   about:{
     name: "Tejus Revi",
     nameML: "തേജസ് രവി",
     jobTitle: "Student at MUN",
     location: "Ottawa, Canada",
+    credit: "© Handcrafted with Reactjs by Tejus Revi",
+    srcText: "View source code",
+    srcLink: "https://github.com/tejusrevi/personal-website",
     image:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/tejus-square-min.jpeg?alt=media&token=16b354cc-8928-42a8-bca0-fbf9f508aba0"
   },
   education:[

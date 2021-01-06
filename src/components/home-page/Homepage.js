@@ -74,7 +74,8 @@ function Homepage(props){
                       <button className="more-button" onClick={ ()=> window.open('/projects',"_self") }>More About Me</button>
                   </div>
                   <div id="credits">
-                    <h3>{homepage['credits']}</h3>
+                    <h3>{homepage['credit']}</h3>
+                    <h3><a href={homepage['srcLink']}>{homepage['srcText']}</a></h3>
                   </div>
               </div>
           </div>
