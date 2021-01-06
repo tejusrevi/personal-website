@@ -22,6 +22,7 @@ function About(props) {
   }
 
   return (
+    <div>
     <div id="container">
       <div id="profile-container">
         <div id="profile-info">
@@ -59,6 +60,11 @@ function About(props) {
           <ConditionalRenderer menuItem = {menu} data={props.data}/>
         </div>
       </div>
+    </div>
+    <div id="credits">
+      <h3>{about['credit']}</h3>
+      <h3><a href={about['srcLink']}>{about['srcText']}</a></h3>
+    </div>
     </div>
   );
   
