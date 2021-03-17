@@ -57,7 +57,7 @@ function Projects(props){
         <span>Links</span>
         <div className="links">
           {element.links.map(link=>{
-            return <div className="link" key={link.name}><div className={link.name+"-image"}/><a href={link.href} target="_blank" rel="noopener noreferrer">{link.name}</a></div>
+            return <div className="link" key={link.name}><div className={link.name+"-image"}/><a href={link.href} target="_blank" rel="noopener noreferrer" download>{link.name}</a></div>
           })}
         </div>
       </div>

@@ -19,6 +19,23 @@ export default{
   },
   education:[
     {
+      name:"Memorial University of Newfoundland",
+      type:"Bachelor's Degree • Computer Science",
+      date:"2021 -2025",
+      icon:"https://firebasestorage.googleapis.com/v0/b/tejus-dev.appspot.com/o/mun.png?alt=media&token=568ac805-68bb-47c2-b8d7-be7760d69ec0",
+      years:[
+        {
+          year: 1,
+          courses:[
+            "COMP1001 - Introduction to Programming",
+            "MATH1000 - Calculus I",
+            "MATH2050 - Linear Algebra I",
+            "ENGL1090 - Critical Reading and Writing: Telling Stories"
+          ]
+        }
+      ]
+    },
+    {
       name:"Algonquin College School of Advanced Technology",
       type:"Associate's Degree • Computer Programming",
       date:"2018 -2020",

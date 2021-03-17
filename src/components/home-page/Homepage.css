@@ -24,6 +24,7 @@ button{
 #intro-container{
   width: 100%;
   position: absolute;
+  left: 0px;
 }
 #intro{
   margin: auto;
@@ -117,8 +118,8 @@ button{
 #instagram-image{
   background-image: url('../../images/instagram-l.png');
 }
-#facebook-image{
-  background-image: url('../../images/facebook-l.png');
+#twitter-image{
+  background-image: url('../../images/twitter-l.png');
 }
 
 /*typrwriter*/
