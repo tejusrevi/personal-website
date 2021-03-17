@@ -27,8 +27,8 @@ function Homepage(props){
           document.getElementById("social").style.backgroundImage = 'linear-gradient(90deg, #882792, #462574)';
       else if(ev.target.id === "instagram-image")
           document.getElementById("social").style.backgroundImage = 'linear-gradient(90deg, #bc0097, #e7b53e)';
-      else if(ev.target.id === "facebook-image")
-          document.getElementById("social").style.backgroundImage = 'linear-gradient(90deg, #16a4fa, #0262e2)';
+      else if(ev.target.id === "twitter-image")
+          document.getElementById("social").style.backgroundImage = 'linear-gradient(90deg, #1da1f2, #0262e2)';
       else if(ev.target.id === "kaggle-image")
           document.getElementById("social").style.backgroundImage = 'linear-gradient(90deg, #346D9D, #F7CB43)';
   }
@@ -62,11 +62,11 @@ function Homepage(props){
                           <div id="kaggle-image" className="social-icon" onMouseOver={handleColorChange.bind(this)} onMouseOut={handleReset.bind(this)}/>
                       </a>
               
-                      <a id="instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tejx.r/">
+                      <a id="instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tejusrevi/">
                           <div id="instagram-image" className="social-icon" onMouseOver={handleColorChange.bind(this)} onMouseOut={handleReset.bind(this)}/> 
                       </a>
-                      <a id="facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Tejus.Revi/">
-                          <div id="facebook-image" className="social-icon" onMouseOver={handleColorChange.bind(this)} onMouseOut={handleReset.bind(this)}/> 
+                      <a id="twitter" target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tejusrevi/">
+                          <div id="twitter-image" className="social-icon" onMouseOver={handleColorChange.bind(this)} onMouseOut={handleReset.bind(this)}/> 
                       </a>
           
                   </div>
