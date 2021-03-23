@@ -4,6 +4,15 @@ The initial screen is a fork of [tejusrevi/interactive-human-face](https://githu
 
 ![Demo](https://github.com/tejusrevi/personal-website/blob/master/Demo.gif)
 
+
+All information is stored in a single file, [info-en.js](https://github.com/tejusrevi/personal-website/blob/master/src/info-en.js) which gets passed down the component tree. You can modify the contents of this file to use as your portfolio :)
+
+
+To add or remove menu tabs
+1. Add a new anchor tag within #menu in [About.js](https://github.com/tejusrevi/personal-website/blob/master/src/components/about-page/About.js)
+2. Modify [ConditionalRenderer.js](https://github.com/tejusrevi/personal-website/blob/master/src/components/about-page/ConditionalRenderer.js). If adding a new tab, use the id of the new anchor tag in the if-else.
+
+
 In the project directory, you can run:
 ### `npm start`
 
