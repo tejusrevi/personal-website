@@ -71,7 +71,7 @@ function Homepage(props){
           
                   </div>
                   <div id="more">
-                      <button className="more-button" onClick={ ()=> window.open('/projects',"_self") }>More About Me</button>
+                      <button className="more-button" onClick={ ()=> window.open('/projects',"_self") }>View my projects</button>
                   </div>
                   <div id="credits">
                     <h3>{homepage['credit']}</h3>

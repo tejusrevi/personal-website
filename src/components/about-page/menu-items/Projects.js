@@ -83,7 +83,7 @@ function Projects(props){
         <button className="tag-option" onClick={()=>handleTagClick("all")}>All</button>
       </div>
       <div id="show-tags-container">
-        <button id="show-tags" onClick={handleShowTags}>Filter Projects <div id="down-arrow"/></button>
+        <button id="show-tags" onClick={handleShowTags}>Filter Projects </button>
       </div>
       <div id="projects-container">
         {projects}

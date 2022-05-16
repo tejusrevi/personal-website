@@ -24,6 +24,7 @@ body{
   background-color: #fff;
   grid-column-start: 2;
   grid-column-end: 6;
+  margin-left: 7px;
 }
 #profile-info{
   position: fixed;

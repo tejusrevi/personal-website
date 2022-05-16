@@ -6,7 +6,6 @@ console.log('%cTejus says hi :)', 'color: white;background: black;font-size: 3em
 function About(props) {
   const [about, setAbout] = useState(props.data.about)
   const [menu, setMenu] = useState(props.menu)
-  window.onload= ( )=>document.getElementById(props.menu).style.background = '#b2b2b2';
   function handleButtonClick(value){
     var arrOfMenus = document.getElementsByClassName('menu-items');
     window.history.pushState('value', 'value', `/${value}`);
@@ -29,7 +28,7 @@ function About(props) {
           <div id="profile-image" style={{backgroundImage:`url(${about['image']})`}}/>
           <div id="content">
           <h3>{about['name']}</h3>
-            <h4>{about['nameML']}</h4>
+            <h4>{about['pronoun']}</h4>
             <hr/>
             <h4>{about['jobTitle']}</h4>
             <h5>{about['location']}</h5>
@@ -51,11 +50,6 @@ function About(props) {
         </div>
       </div>
       <div id="details">
-        <div id="menu">
-          <button id="projects" className="menu-items" onClick={()=>handleButtonClick("projects")}>Projects</button>
-          <button id="education" className="menu-items" onClick={()=>handleButtonClick("education")}>Education</button>
-          <button id="drawings" className="menu-items" onClick={()=>handleButtonClick("drawings")}>Drawings</button>
-        </div>
         <div id="render-area">
           <ConditionalRenderer menuItem = {menu} data={props.data}/>
         </div>

@@ -39,29 +39,25 @@
   font-size: 0.95rem;
 }
 .tags{
-  overflow-x: auto;
-  display: flex;
-  flex-direction: row;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  flex-wrap: nowrap;
+
 }
 .tags::-webkit-scrollbar {
-  display: none;
+  
 }
 .tag{
   margin: 5px;
   padding: 7px 10px;
   border-radius: 20px;
   background-color: #e4e4e4;
-  flex-shrink:0;
   font-size: 0.8rem;
   font-weight: 600;
   color: #6b6b6b;
   border: 0px;
   outline: none;
+  display: inline-block;
 }
 .tag:hover{
+  transition: 0.2s;
   background-color: #c4c4c4;
   cursor: pointer;
 }
@@ -100,7 +96,7 @@
   flex-direction: column;
 }
 #show-tags{
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 10px 15px;
   width: fit-content;
   border-radius: 20px;
   background-color: #ffffff;
@@ -112,25 +108,13 @@
   outline: none;
   margin: auto;
 }
-#down-arrow{
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 30px;
-  min-height: 25px;
-  margin: auto;
-  filter: contrast(0.2);
-  background: url('../../../images/down.gif');
-  transform: rotate(0deg);
-}
+
 .links{
-  overflow-x: auto;
   display: flex;
   flex-direction: row;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 .links::-webkit-scrollbar {
-  display: none;
+
 }
 .link{
   margin: 5px;
@@ -141,6 +125,7 @@
   font-size: 0.8rem;
   display: flex;
   flex-direction: row;
+  width: fit-content;
 }
 .link:hover{
   background-color: #c4c4c4;
